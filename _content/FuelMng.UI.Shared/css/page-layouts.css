@@ -1,0 +1,83 @@
+.uis-grid-data-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas: "toolbar" "main-content" "pagination";
+}
+
+.uis-toolbar {
+    grid-area: toolbar;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0.25rem;
+
+    .uis-new-entity-button {
+        outline: rgb(255, 255, 255) none 0;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 1rem;
+        text-align: center;
+        text-decoration: none solid white;
+        user-select: none;
+        border-radius: 6px;
+        margin: 2px;
+        background-image: var(--uis-bg-gradient-start);
+        border: 1px solid var(--uis-button-border-color);
+        color: white;
+        padding: 6px 16px;
+        vertical-align: middle;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    .uis-new-entity-button:disabled {
+        background-color: var(--uis-button-disabled-bg-color);
+    }
+
+    .uis-new-entity-button:not(:disabled):hover {
+        background-image: var(--uis-bg-gradient-end);
+    }
+}
+
+.uis-grid-data-table {
+    grid-area: main-content;
+    margin-bottom: 0.5rem;
+}
+
+.uis-pagination-bar {
+    grid-area: pagination;
+}
+
+.uis-grid-row-btns {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    column-gap: 0.25rem;
+    
+    button {
+        outline: rgb(255, 255, 255) none 0;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 1.8rem;
+        text-align: center;
+        text-decoration: none solid white;
+        user-select: none;
+        border-radius: 6px;
+        margin: 0px;
+        background-image: var(--uis-bg-gradient-start);
+        border: 1px solid var(--uis-button-border-color);
+        color: white;
+        padding: 0px 0.5rem;
+        vertical-align: middle;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    button:disabled {
+        background-color: var(--uis-button-disabled-bg-color);
+    }
+
+    button:not(:disabled):hover {
+        background-image: var(--uis-bg-gradient-end);
+    }
+}

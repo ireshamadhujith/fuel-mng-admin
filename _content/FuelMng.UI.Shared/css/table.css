@@ -1,0 +1,43 @@
+.uis-grid-data-table td {
+    padding: 2px 4px;
+    border: 1px solid #ccc; /* Add border around each cell */
+}
+
+.uis-grid-data-table table {
+    border-collapse: collapse; /* Ensure borders are not doubled */
+}
+
+.uis-grid-data-table th {
+    padding: 0;
+    border: 1px solid whitesmoke; /* Add border around each cell */
+}
+
+.uis-table-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.375rem 0.5rem;
+    border-bottom: none;
+    background-color: var(--uis-table-header-bg-color);
+    color: var(--uis-table-header-color);
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.uis-table-header .sort-button-container {
+    margin-left: auto;
+    display: flex;
+}
+
+.uis-table-no-data-td {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--uis-table-no-data-td-color);
+}
+

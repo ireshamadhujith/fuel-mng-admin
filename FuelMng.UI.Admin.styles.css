@@ -1,0 +1,88 @@
+/* /Components/AppSystem/PaginationBar.razor.rz.scp.css */
+.uis-pagination-bar[b-1qz3n3xs8n] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.cs-pagi-button[b-1qz3n3xs8n] {
+    background-color: white;
+    border: 1px solid silver;
+    color: black;
+    padding: 6px 12px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.cs-pagi-button-left[b-1qz3n3xs8n] {
+    border-radius: 6px 0 0 6px;
+}
+
+.cs-pagi-button-right[b-1qz3n3xs8n] {
+    border-radius: 0 6px 6px 0;
+}
+
+.cs-pagi-button-center[b-1qz3n3xs8n] {
+    border-radius: 6px;
+}
+
+.cs-pagi-dropdown[b-1qz3n3xs8n] {
+    margin-left: 0.375rem;
+    margin-right: 0.375rem;
+}
+
+.cs-pagi-dropbtn[b-1qz3n3xs8n] {
+    padding: 0.375rem 0.5rem;
+    border: 1px solid silver;
+    border-radius: 6px;
+    cursor: pointer;
+    color:white;
+    background-image: var(--uis-bg-gradient-start);
+    font-size: 1rem;
+}
+
+.cs-pagi-dropdown-content[b-1qz3n3xs8n] {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 80px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.cs-pagi-dropdown-content a[b-1qz3n3xs8n] {
+    color: black;
+    padding: 6px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.cs-pagi-dropdown-content a:hover[b-1qz3n3xs8n] {
+    color: white;
+    background-color: #ec407a;
+}
+
+.cs-pagi-dropdown:hover .cs-pagi-dropdown-content[b-1qz3n3xs8n] {
+    display: block;
+}
+
+.cs-pagi-dropdown:hover .cs-pagi-dropbtn[b-1qz3n3xs8n] {
+    background-image: var(--uis-bg-gradient-end);
+}
+
+.cs-page-number[b-1qz3n3xs8n] {
+    padding: 6px 12px;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.cs-pagi-total-items[b-1qz3n3xs8n] {
+    font-size: 1.1rem;
+}
+/* /Pages/Logic/NormalBill/NormalBillList.razor.rz.scp.css */
+/* /Pages/Logic/VatBill/VatBillList.razor.rz.scp.css */
+/* /Pages/Logic/VatBill/VatBillSummary.razor.rz.scp.css */
+/* /Pages/Logic/VatCustomer/VatCustomerCreate.razor.rz.scp.css */
+/* /Pages/Logic/VatCustomer/VatCustomerUpdate.razor.rz.scp.css */

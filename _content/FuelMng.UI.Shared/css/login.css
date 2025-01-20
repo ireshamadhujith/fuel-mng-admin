@@ -1,0 +1,101 @@
+.login-container {
+    grid-area: main-container;
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+
+    .login-box {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding: 0 16px 16px 16px;
+        background-color: white;
+        background-clip: border-box;
+        border: 2px solid rgb(158, 197, 254);
+        border-radius: 6px;
+        color: rgb(33, 37, 41);
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
+        z-index: 0;
+    }
+}
+
+.login-title {
+    background-color: rgba(33, 37, 41, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.176);
+    margin-top: -16px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    position: relative;
+    z-index: 2;
+    font-size: 24px;
+    font-weight: 700;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    background-image: linear-gradient(rgb(236, 64, 122), rgb(216, 27, 96));
+    text-align: center;
+    color: white;
+}   
+
+.login-input {
+    font-size: 20px;
+    line-height: 30px;
+    background-clip: padding-box;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(173, 202, 243);
+    border-radius: 8px;
+    color: rgb(33, 37, 41);
+    display: block;
+    font-weight: 400;
+    padding: 8px 16px;
+    width: 590px;
+    outline: rgb(38, 176, 80) solid 1px;
+    min-height: 48px;
+    text-align: start;
+    text-size-adjust: 100%;
+}
+
+.login-label {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: rgb(33, 37, 41);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: start;
+    text-size-adjust: 100%;
+}
+
+.login-button {
+    outline: rgb(255, 255, 255) none 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none solid white;
+    user-select: none;
+    border-radius: 6px;
+    margin: 4px 2px;
+    background-image: var(--uis-bg-gradient-start);
+    border: 1px solid rgb(217, 13, 253);
+    color: white;
+    padding: 6px 12px;
+    vertical-align: middle;
+    line-height: 32px;
+    width: 100%;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.login-button:disabled {
+    background-color: var(--uis-button-disabled-bg-color);
+    color: black; /* Dimmed text color */
+    cursor: not-allowed; /* Shows a "not allowed" cursor on hover */
+    opacity: 0.6; /* Makes the button appear slightly faded */
+    box-shadow: none; /* Removes any shadow for a flat appearance */
+}
+
+.login-button:not(:disabled):hover {
+    background-image: var(--uis-bg-gradient-end);
+}

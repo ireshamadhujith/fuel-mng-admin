@@ -1,0 +1,57 @@
+#modal-toggle-checkbox {
+    display: none;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#modal-toggle-checkbox:checked + .modal-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    width: 90%;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* 
+<body>
+  <!-- Toggle checkbox -->
+  <input type="checkbox" id="modal-toggle">
+
+  <!-- Open Modal Button -->
+  <label for="modal-toggle">
+    <button>Open Modal</button>
+  </label>
+
+  <!-- Modal -->
+  <div class="modal">
+    <div class="modal-content">
+      <a href="#" class="close" for="modal-toggle">&times;</a>
+      <h2>Modal Title</h2>
+      <p>This is a modal dialog created using only HTML and CSS.</p>
+      <label for="modal-toggle">
+        <button>Close</button>
+      </label>
+    </div>
+  </div>
+</body>
+*/

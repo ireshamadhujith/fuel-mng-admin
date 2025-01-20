@@ -1,0 +1,47 @@
+button {
+    outline: white none 0;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    box-shadow: none;
+    color: black;
+}
+
+.submit-btn {
+    outline: rgb(255, 255, 255) none 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none solid white;
+    user-select: none;
+    border-radius: 6px;
+    margin: 4px 2px;
+    background-image: var(--uis-bg-gradient-start);
+    border: 1px solid var(--uis-button-border-color);
+    color: white;
+    padding: 12px 16px;
+    vertical-align: middle;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;    
+}
+
+.submit-btn:disabled {
+    background-color: var(--uis-button-disabled-bg-color);
+}
+
+.submit-btn:not(:disabled):hover {
+    background-image: var(--uis-bg-gradient-end);
+}
+
+#btn-toggle-sidebar {
+    padding: 0.313rem;
+    background: none;
+    border: none;
+}

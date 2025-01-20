@@ -1,0 +1,58 @@
+#uis-search-toolbar {
+    .uis-toolbar-button {
+        font-size: 1rem;
+        background-image: var(--uis-bg-gradient-start);
+        border: 1px solid var(--uis-button-border-color);
+        color: white;
+        padding: 8px 8px;
+        vertical-align: middle;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    .uis-toolbar-button:disabled {
+        background-image: none;
+        background-color: var(--uis-button-disabled-bg-color);
+        border: 1px solid var(--uis-button-disabled-bg-color);
+    }
+    
+    .search-toolbar-text {
+        font-size: 1rem;
+        border: 1px solid rgb(134, 183, 254);
+        border-radius: 6px;
+        display: inline-block;
+        padding: 8px 16px;
+        width: 250px;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        outline: rgb(33, 37, 41) none 0;
+        flex: 1 1 auto;
+        position: relative;
+    }
+
+    .search-toolbar-text:focus {
+        border-color: dodgerblue;
+        box-shadow: 0 0 0.5rem 0 dodgerblue;
+    }
+    
+    .search-toolbar-select {
+        font-size: 1rem;
+        border: 1px solid rgb(134, 183, 254);
+        border-radius: 6px;
+        padding: 8px 16px;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        width: 200px;
+        outline: rgb(33, 37, 41) none 0;
+        flex: 1 1 auto;
+        position: relative;
+        margin-right: 0.25rem;
+    }
+
+    .search-toolbar-select:focus {
+        border-color: dodgerblue;
+        box-shadow: 0 0 0.5rem 0 dodgerblue;
+    }
+    
+    .search-by-label {
+        font-size: 1rem;
+        margin-right: 4px;
+    }
+}

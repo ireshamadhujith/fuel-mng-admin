@@ -1,0 +1,42 @@
+.uis-top-navbar {
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "toggle breadcrumb . user";
+    column-gap: 0.5rem;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-top: 0.313rem;
+    padding-bottom: 0.313rem;
+
+    #btn-toggle-sidebar {
+        grid-area: toggle;
+        i {
+            font-size: 1.5rem;
+        }
+    }
+
+    .breadcrumbs {
+        grid-area: breadcrumb;
+        color: white;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #breadcrumb-current-page {
+            font-weight: bold;
+        }
+    }
+
+
+    .user-info {
+        grid-area: user;
+        color: white;
+        margin-right: 0.313rem;
+        i {
+            font-size: 1.2rem;
+        }
+    }
+}

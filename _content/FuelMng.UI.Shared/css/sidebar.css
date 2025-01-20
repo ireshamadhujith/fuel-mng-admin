@@ -1,0 +1,97 @@
+#uis-sidebar {
+    background: var(--sidebar-bg-color);
+    transition: transform 0.3s ease;
+    height: 100%;
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+        padding-right: 0.313rem;
+    }
+
+    nav {
+        background-image: var(--uis-sidebar-bg);
+        height: 100%;
+        position: sticky;
+        top: 0;
+        align-self: start;
+        transition: 300ms ease-in-out;
+        overflow: hidden;
+        text-wrap: nowrap;
+    }
+
+    .close {
+        padding: 5px;
+        width: 60px;
+    }
+
+    li.uis-nav-item {
+        color: var(--sidebar-text-color);
+    }
+
+    li.uis-nav-item.active {
+        background-image: var(--uis-bg-gradient-end);
+        font-weight: bold;
+        color: white;
+    }
+
+    a,
+    .dropdown-btn {
+        padding: .85rem;
+        text-decoration: none;
+        color: var(--sidebar-text-color);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .dropdown-btn {
+        width: 100%;
+        text-align: left;
+        background: none;
+        border: none;
+        font: inherit;
+        cursor: pointer;
+    }
+
+    i {
+        flex-shrink: 0;
+        fill: var(--sidebar-text-color);
+    }
+
+    a span,
+    .dropdown-btn span {
+        flex-grow: 1;
+    }
+
+    .dropdown-btn:hover,
+    li.uis-nav-item:hover {
+        background-color: dimgray;
+    }
+
+    .sub-menu {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: 300ms ease-in-out;
+
+        >div {
+            overflow: hidden;
+        }
+    }
+
+    .sub-menu.show {
+        grid-template-rows: 1fr;
+    }
+
+    .dropdown-btn i {
+        transition: 200ms ease;
+    }
+
+    .rotate i:last-child {
+        rotate: 180deg;
+    }
+
+    .sub-menu a {
+        padding-left: 2em;
+    }
+}
